@@ -2,12 +2,12 @@ import flet as ft
 
 def main(page: ft.Page):
     header = ft.Text(
-        value="Spendr!", 
-        color="green",
+        value="Spendr!?",
+        color="blue",
         style=ft.TextThemeStyle.DISPLAY_LARGE
     )
     description = ft.Text(
-        value="An assistant to help you with home planification!",
+        value="Your personal assistant to help you with home planification!",
         color="#03DAC5",
         italic=True,
         style=ft.TextThemeStyle.DISPLAY_SMALL
