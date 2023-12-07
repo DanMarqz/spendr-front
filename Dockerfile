@@ -7,4 +7,4 @@ RUN pip install flet
 COPY . /app
 
 EXPOSE 8080
-CMD ["python", "main.py"]
+CMD ["python", "/app/main.py"]
