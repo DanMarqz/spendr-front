@@ -7,4 +7,5 @@ RUN pip install flet
 COPY . /app
 
 EXPOSE 8080
-CMD ["python", "/app/main.py"]
+# flet run -w -p 8080
+CMD ["flet", "run", "-w", "-p", "8080"]
