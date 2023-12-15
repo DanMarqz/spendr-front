@@ -1,14 +1,14 @@
 from flet import *
 
-class TransactionsView(UserControl):
+class LoginView(UserControl):
   def __init__(self, page):
     super().__init__()
 
     self.view = View(
-      "/transactions", 
+      "/login", 
       [
         AppBar(
-          title=Text("Transactions"), 
+          title=Text("Login"), 
           bgcolor=colors.SURFACE_VARIANT
         ),
         ElevatedButton(
