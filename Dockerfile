@@ -8,4 +8,4 @@ COPY . /app
 
 EXPOSE 8080
 # flet run -w -p 8080
-CMD ["flet", "run", "-r", "main.py", "-p", "8080"]
+CMD ["flet", "run", "-w", "-p", "8080"]
