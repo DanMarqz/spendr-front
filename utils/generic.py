@@ -6,10 +6,10 @@ class Utils():
   def __init__(self, page):
     super().__init__()
 
-    def switchRouter(route='/', page=None):
-      case = {
-        '/':              HomeView(page).view,
-        '/transactions':  TransactionsView(page).view,
-        '/login':         LoginView(page).view
-      }
-      return case.get(route, "Valor inválido")
+  def switchRouter(route='/', page=None):
+    routes = {
+      '/':              HomeView(page).view,
+      '/transactions':  TransactionsView(page).view,
+      '/login':         LoginView(page).view
+    }
+    return routes.get(route, "Valor inválido")
